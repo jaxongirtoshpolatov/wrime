@@ -316,13 +316,14 @@ header .nav-menu .nav-link {
     left: -3px;
   }
   .intro .content-container .content-box {
-    min-width: 396px;
+    min-width: initial;
     width: 100%;
     right: 0;
     padding: 0 !important;
   }
   .intro .content-container .text-box {
     padding: 11px 28px 20px 0 !important;
+    min-width: initial !important;
   }
   .intro .content-container .content-btn {
     margin-left: 75px;
