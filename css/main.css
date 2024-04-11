@@ -26,7 +26,19 @@ body {
 }
 
 .clr {
-  color: #F1BC7F;
+  color: #F1BC7F !important;
+}
+
+.link {
+  color: #FFF;
+  text-align: center;
+  font-family: "Noi Grotesk Fix";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-transform: uppercase;
 }
 
 .description {
@@ -278,9 +290,112 @@ body {
   left: -100%;
 }
 
+.products-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 45px 31px;
+}
+
+.products-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 0;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.products .product-photos {
+  position: relative;
+  z-index: 3;
+}
+
+.products .product-photos .light-back {
+  position: absolute;
+  top: 137px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 154px;
+  height: 170.299px;
+  background-color: #F1BC7F;
+  filter: blur(75px);
+  z-index: -1;
+}
+
+.products .product-photos .black-back {
+  position: absolute;
+  bottom: 7px;
+  width: 425px;
+  height: 39px;
+  border-radius: 425px;
+  background: #211510;
+  filter: blur(25px);
+}
+
+.products .product-info {
+  position: absolute;
+  top: calc(100% - 46px);
+  z-index: 2;
+  border-radius: 20px;
+  background: #5D7845;
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  height: auto;
+  max-height: 97px;
+  transition: max-height 0.3s ease;
+}
+
+.products .product-info:hover {
+  max-height: 266px;
+  transition: 0.5s;
+}
+
+.products .product-info:hover p {
+  opacity: 1;
+}
+
+.products .product-info h3 {
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 30px;
+  font-weight: 600;
+  padding: 33px 0 18px 0;
+}
+
+.products .product-info p {
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0;
+}
+
+.products .product-info .clr {
+  margin: 17px 0;
+}
+
+.products .product-info .purchase {
+  margin-bottom: 31px;
+  display: inline-block;
+}
+
+.products .product-info .purchase a {
+  display: block;
+}
+
+.products .product-info .purchase a:not(:nth-child(2)) {
+  margin-bottom: 13px;
+}
+
 footer {
   background: linear-gradient(0deg, #211510 0%, rgba(33, 21, 16, 0) 100%);
   position: relative;
+  padding-top: 105px;
 }
 
 footer .container {
@@ -393,6 +508,9 @@ header .nav-menu .nav-link {
 @media screen and (max-width: 1440px) {
   .container {
     max-width: calc(100% - 240px);
+  }
+  .products-cards {
+    grid-template-columns: repeat(auto-fill, minmax(379px, 1fr));
   }
 }
 @media screen and (max-width: 1100px) {
@@ -509,6 +627,46 @@ header .nav-menu .nav-link {
   footer .footer-postion-1440 {
     display: none;
   }
+  .products-cards {
+    grid-template-columns: auto auto;
+    row-gap: 0;
+  }
+  .products-card {
+    height: 549px;
+  }
+  .products .product-photos .product-photo {
+    width: 284px;
+    height: 336px;
+  }
+  .products .product-info {
+    position: relative;
+    bottom: 46px;
+    top: unset;
+    pointer-events: none;
+    min-height: 252px;
+  }
+  .products .product-info h3 {
+    font-size: 20px;
+    padding: 45px 0 10px 0;
+  }
+  .products .product-info p {
+    opacity: 1;
+    font-size: 14px;
+  }
+  .products .product-info .clr {
+    margin: 10px 0 44px 0;
+  }
+  .products .product-info .purchase {
+    margin-bottom: 41px;
+    display: inline-block;
+  }
+  .products .product-info .purchase a {
+    font-size: 16px;
+    display: block;
+  }
+  .products .product-info .purchase a:not(:nth-child(2)) {
+    margin-bottom: 10px;
+  }
 }
 @media screen and (max-width: 744px) {
   .container {
@@ -618,6 +776,9 @@ header .nav-menu .nav-link {
   }
   .intro .statistic .natural {
     padding-left: 18px;
+  }
+  .products-cards {
+    grid-template-columns: auto;
   }
   footer .footer-postion-744 {
     display: none;

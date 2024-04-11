@@ -1,0 +1,101 @@
+// call mixin
+@use '../utils/mixin';
+
+.products
+{
+    &-cards 
+    {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+        gap: 45px 31px;
+    }
+    &-card
+    {
+        @include mixin.flex(center,center,0,0);
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+    }
+    .product-photos
+    {
+        position: relative;
+        z-index: 3;
+        .light-back
+        {
+            position: absolute;
+            top: 137px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 154px;
+            height: 170.299px;
+            background-color: #F1BC7F;
+            filter: blur(75px);
+            z-index: -1;
+        }
+        .black-back
+        {
+            position: absolute;
+            bottom: 7px;
+            width: 425px;
+            height: 39px;
+            border-radius: 425px;
+            background: #211510;
+            filter: blur(25px);
+        }
+    }
+    .product-info
+    {
+        position: absolute;
+        top: calc(100% - 46px);
+        z-index: 2;
+        border-radius: 20px;
+        background: #5D7845;
+        max-width: 380px;
+        width: 100%;
+        text-align: center;
+        overflow: hidden; 
+        height: auto; 
+        max-height: 97px;
+        transition: max-height 0.3s ease;
+        &:hover
+        {
+            max-height: 266px;
+            transition: 0.5s;
+            p 
+            {
+                opacity: 1;
+            }
+            
+        }
+        h3 
+        {
+            color: #FFF;
+            font-family: "Noi Grotesk Fix";
+            font-size: 30px;
+            font-weight: 600;
+            padding: 33px 0 18px 0;
+        }
+        p 
+        {
+            @include mixin.medium-font;
+            opacity: 0;
+        }
+        .clr 
+        {
+            margin: 17px 0;
+        }
+        .purchase
+        {
+            margin-bottom: 31px;
+            display: inline-block;
+            a 
+            {
+                display: block;
+                &:not(:nth-child(2))
+                {
+                    margin-bottom: 13px;
+                }
+            }
+        }
+    }
+}

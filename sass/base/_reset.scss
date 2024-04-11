@@ -34,5 +34,19 @@ body
 // spicefic
 .clr
 {
-    color: #F1BC7F;
+    color: #F1BC7F !important;
+}
+
+// link
+.link 
+{
+    color: #FFF;
+    text-align: center;
+    font-family: "Noi Grotesk Fix";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-transform: uppercase;
 }

@@ -5,6 +5,7 @@ footer
 {
     background: linear-gradient(0deg, #211510 0%, rgba(33, 21, 16, 0.00) 100%);
     position: relative;
+    padding-top: 105px;
     .container
     {
         @include mixin.flex(center,center,0,0);
