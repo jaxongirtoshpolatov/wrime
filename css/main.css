@@ -146,6 +146,39 @@ body {
   padding: 12px 19.308px 11.3px 35px;
 }
 
+.intro .statistic {
+  margin-top: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 0;
+  padding: 0 109px 0 136px;
+}
+
+.intro .statistic .natural {
+  padding-left: 10px;
+}
+
+.intro .statistic span {
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+  color: #F1BC7F;
+}
+
+.intro .statistic p {
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 169px;
+}
+
 header .container {
   padding: 20px 0;
   display: flex;
@@ -216,6 +249,9 @@ header .nav-menu .nav-link {
   .intro .content-box .content-btn {
     padding: 0px;
   }
+  .intro .statistic {
+    padding: 0 80px 0 106px;
+  }
 }
 @media screen and (max-width: 1054px) {
   .intro video {
@@ -273,6 +309,16 @@ header .nav-menu .nav-link {
   .intro .content-container .intro-bg-3-744 {
     display: block;
   }
+  .intro .statistic {
+    padding: 0px 32px 0 51px;
+    margin-top: 29px;
+  }
+  .intro .statistic .natural {
+    padding-left: 29px;
+  }
+  .intro .statistic p {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 744px) {
   .container {
@@ -280,6 +326,20 @@ header .nav-menu .nav-link {
   }
   header .container {
     gap: 0px 113px;
+  }
+  .intro .statistic {
+    padding: 0;
+    margin-top: 29px;
+  }
+  .intro .statistic .natural {
+    padding-left: 29px;
+  }
+  .intro .statistic span {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .intro .statistic p {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 730px) {
@@ -313,7 +373,7 @@ header .nav-menu .nav-link {
     width: 381px;
     height: 253px;
     position: relative;
-    left: -3px;
+    left: -20px;
   }
   .intro .content-container .content-box {
     min-width: initial;
@@ -343,11 +403,22 @@ header .nav-menu .nav-link {
   }
   .intro .content-container .intro-bg-3-744 {
     top: 323px;
-    right: -120px;
+    right: -137px;
     width: 340.146px;
     height: 341.667px;
     transform: rotate(-0.593deg);
     object-fit: contain;
+  }
+  .intro .statistic {
+    padding: 0 50px 0 0;
+    align-items: start;
+    margin-top: 65px;
+  }
+  .intro .statistic p {
+    max-width: 103px;
+  }
+  .intro .statistic .natural {
+    padding-left: 18px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -366,6 +437,9 @@ header .nav-menu .nav-link {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .intro .statistic {
+    padding: 0;
   }
 }
 

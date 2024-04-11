@@ -65,7 +65,13 @@
             }
 
         }
+        // .statistic
+        .statistic
+        {
+            padding: 0 80px 0 106px;
+        }
     }
+    
 }
 
 // 1054px
@@ -148,7 +154,22 @@
                 display: block;
             }
         }
+        // .statistic
+        .statistic
+        {
+            padding: 0px 32px 0 51px;
+            margin-top: 29px;
+            .natural
+            {
+                padding-left: 29px;
+            }
+            p 
+            {
+                font-size: 14px;
+            }
+        }
     }
+   
 }
 
 // 744px
@@ -163,6 +184,29 @@
         .container
         {
             gap: 0px 113px;
+        }
+    }
+    // .intro
+    .intro
+    {
+        // .statistic
+        .statistic
+        {
+            padding: 0;
+            margin-top: 29px;
+            .natural
+            {
+                padding-left: 29px;
+            }
+            span 
+            {
+                font-size: 35px;
+                line-height: 35px;
+            }
+            p 
+            {
+                font-size: 14px;
+            }
         }
     }
 }
@@ -214,7 +258,7 @@
                     width: 381px;
                     height: 253px;
                     position: relative;
-                    left: -3px;
+                    left: -20px;
                 }
             }
             .content-box
@@ -253,11 +297,26 @@
             .intro-bg-3-744
             {
                 top: 323px;
-                right: -120px;
+                right: -137px; // -84px
                 width: 340.146px;
                 height: 341.667px;
                 transform: rotate(-0.593deg);
                 object-fit: contain;
+            }
+        }
+        // /.statistic
+        .statistic
+        {
+            padding: 0 50px 0 0;
+            align-items: start;
+            margin-top: 65px;
+            p 
+            {
+                max-width: 103px;
+            }
+            .natural
+            {
+                padding-left: 18px;
             }
         }
     }
@@ -298,6 +357,11 @@
                 left: 50%;
                 transform: translateX(-50%);
             }
+        }
+        // .statistic
+        .statistic
+        {
+            padding: 0;
         }
     }
 }

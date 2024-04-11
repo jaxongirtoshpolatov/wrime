@@ -95,4 +95,24 @@
             }
         }
     }
+    .statistic
+    {
+        margin-top: 39px;
+        @include mixin.flex(center,space-between,0,0);
+        padding: 0 109px 0 136px;
+        .natural
+        {
+            padding-left: 10px;
+        }
+        span 
+        {
+            @include mixin.h2;
+            color: #F1BC7F;
+        }
+        p 
+        {
+            @include mixin.medium-font;
+            max-width: 169px;
+        }
+    }
 }
