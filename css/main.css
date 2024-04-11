@@ -47,6 +47,10 @@ body {
   padding-right: 139px;
 }
 
+.intro .content-container figure .coffee-overlay, .intro .content-top figure .coffee-overlay {
+  display: none;
+}
+
 .intro .content-container .intro-bg-1, .intro .content-top .intro-bg-1 {
   position: absolute;
   left: 0;
@@ -380,6 +384,10 @@ header .nav-menu .nav-link {
     justify-content: center;
     padding: 0;
   }
+  .intro .content-container figure .coffee-overlay {
+    display: block;
+    bottom: 37px;
+  }
   .intro .content-container .content-img img {
     width: 381px;
     height: 253px;
@@ -391,12 +399,6 @@ header .nav-menu .nav-link {
     width: 100%;
     right: 0;
     padding: 0 !important;
-  }
-  .intro .content-container .content-box .coffee-overlay {
-    bottom: 266px;
-    position: fixed;
-    width: 1000px;
-    left: -60px;
   }
   .intro .content-container .text-box {
     padding: 11px 28px 20px 0 !important;

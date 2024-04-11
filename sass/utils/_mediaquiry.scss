@@ -247,6 +247,14 @@
 
         .content-container
         {
+            figure 
+            {
+                .coffee-overlay
+                {
+                    display: block;
+                    bottom: 37px;
+                }
+            }
             flex-direction: column;
             align-content: center;
             justify-content: center;
@@ -267,13 +275,7 @@
                 width: 100%;
                 right: 0;
                 padding: 0 !important;
-                .coffee-overlay
-                {
-                    bottom: 266px;
-                    position: fixed;
-                    width: 1000px;
-                    left: -60px;
-                }
+                
             }
             .text-box
             {
