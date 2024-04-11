@@ -38,7 +38,7 @@ body {
   border-radius: 30px;
 }
 
-.intro .content-container {
+.intro .content-container, .intro .content-top {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,14 +47,14 @@ body {
   padding-right: 139px;
 }
 
-.intro .content-container .intro-bg-1 {
+.intro .content-container .intro-bg-1, .intro .content-top .intro-bg-1 {
   position: absolute;
   left: 0;
   z-index: 12;
   top: 232px;
 }
 
-.intro .content-container .intro-bg-1-744 {
+.intro .content-container .intro-bg-1-744, .intro .content-top .intro-bg-1-744 {
   position: absolute;
   left: 0;
   top: 148px;
@@ -62,38 +62,38 @@ body {
   display: none;
 }
 
-.intro .content-container .intro-bg-3 {
+.intro .content-container .intro-bg-3, .intro .content-top .intro-bg-3 {
   position: absolute;
   right: 0;
   top: 609px;
 }
 
-.intro .content-container .intro-bg-3-744 {
+.intro .content-container .intro-bg-3-744, .intro .content-top .intro-bg-3-744 {
   position: absolute;
   right: 0;
   top: 365px;
   display: none;
 }
 
-.intro .content-container .intro-bg-1-480 {
+.intro .content-container .intro-bg-1-480, .intro .content-top .intro-bg-1-480 {
   position: absolute;
   left: 0;
   top: 365px;
   display: none;
 }
 
-.intro .content-container .content-img {
+.intro .content-container .content-img, .intro .content-top .content-img {
   margin-left: -47px;
   position: relative;
   left: 31px;
   top: 10px;
 }
 
-.intro .content-container .content-box {
+.intro .content-container .content-box, .intro .content-top .content-box {
   padding-right: 50px;
 }
 
-.intro .content-container .content-box h2 {
+.intro .content-container .content-box h2, .intro .content-top .content-box h2 {
   color: #FFF;
   font-family: "Noi Grotesk Fix";
   font-size: 45px;
@@ -102,20 +102,20 @@ body {
   line-height: 50px;
 }
 
-.intro .content-container .content-box span {
+.intro .content-container .content-box span, .intro .content-top .content-box span {
   display: block;
 }
 
-.intro .content-container .content-box span:nth-child(2) {
+.intro .content-container .content-box span:nth-child(2), .intro .content-top .content-box span:nth-child(2) {
   display: inline-block;
 }
 
-.intro .content-container .content-box .text-box {
+.intro .content-container .content-box .text-box, .intro .content-top .content-box .text-box {
   padding: 30px 0;
   min-width: 483px;
 }
 
-.intro .content-container .content-box p {
+.intro .content-container .content-box p, .intro .content-top .content-box p {
   color: #FFF;
   font-family: "Noi Grotesk Fix";
   font-size: 16px;
@@ -124,15 +124,17 @@ body {
   line-height: normal;
 }
 
-.intro .content-container .content-box p:first-child {
+.intro .content-container .content-box p:first-child, .intro .content-top .content-box p:first-child {
   margin-bottom: 11px;
 }
 
-.intro .content-container .content-box .content-btn {
+.intro .content-container .content-box .content-btn, .intro .content-top .content-box .content-btn {
+  position: relative;
+  z-index: 12;
   border-radius: 30px;
 }
 
-.intro .content-container .content-box .content-btn a {
+.intro .content-container .content-box .content-btn a, .intro .content-top .content-box .content-btn a {
   color: #FFF;
   font-family: "Noi Grotesk Fix";
   font-size: 16px;
@@ -177,6 +179,15 @@ body {
   font-weight: 400;
   line-height: normal;
   max-width: 169px;
+}
+
+.intro .coffee-overlay {
+  width: 1000px;
+  height: 143px;
+  background: linear-gradient(0deg, #211510 0%, rgba(33, 21, 16, 0) 100%);
+  position: absolute;
+  bottom: -33px;
+  left: -100%;
 }
 
 header .container {
@@ -380,6 +391,12 @@ header .nav-menu .nav-link {
     width: 100%;
     right: 0;
     padding: 0 !important;
+  }
+  .intro .content-container .content-box .coffee-overlay {
+    bottom: 266px;
+    position: fixed;
+    width: 1000px;
+    left: -60px;
   }
   .intro .content-container .text-box {
     padding: 11px 28px 20px 0 !important;
