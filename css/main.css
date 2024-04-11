@@ -642,8 +642,8 @@ header .nav-menu .nav-link {
     position: relative;
     bottom: 46px;
     top: unset;
-    pointer-events: none;
     min-height: 252px;
+    z-index: 2;
   }
   .products .product-info h3 {
     font-size: 20px;
@@ -652,6 +652,7 @@ header .nav-menu .nav-link {
   .products .product-info p {
     opacity: 1;
     font-size: 14px;
+    padding: 0 21px;
   }
   .products .product-info .clr {
     margin: 10px 0 44px 0;
