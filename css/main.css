@@ -361,6 +361,12 @@ header .nav-menu .nav-link {
     width: 84px;
     height: 30px;
   }
+  .intro .content-container .content-btn {
+    margin-left: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

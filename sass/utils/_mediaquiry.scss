@@ -286,4 +286,18 @@
             }
         }
     }
+    // .intro
+    .intro
+    {
+        .content-container
+        {
+            .content-btn
+            {
+                margin-left: 0;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
 }
