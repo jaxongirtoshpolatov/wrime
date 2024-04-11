@@ -1,0 +1,288 @@
+@media screen and (max-width: 1440px) {
+    .container
+    {
+        max-width: calc(100% - 240px);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .container 
+    {
+        max-width: calc(100% - 120px);
+    }
+    // header
+    header
+    {
+        .brand-logo
+        {
+            svg
+            {
+                width: 113px;
+                height: 40px;
+            }
+        }
+        .container
+        {
+            gap: 0px 113px;
+        }
+        .nav-menu
+        {
+            gap: 0px 40px;
+        }
+    }
+    // .intro
+    .intro
+    {
+        .intro-bg-1
+        {
+            width: 324px;
+            top: 330px !important;
+        }
+        .content-img
+        {
+            img 
+            {
+                width: 550px;
+            }
+        }
+        .content-box
+        {
+            padding-right: 109px;
+            h2 
+            {
+                font-size: 30px !important;
+                span 
+                {
+                    &:nth-child(1)
+                    {
+                        display: inline-block;
+                    }
+                }
+            }
+            .content-btn
+            {
+                padding: 0px;
+            }
+
+        }
+    }
+}
+
+// 1054px
+@media screen and (max-width: 1054px) {
+    // intro
+    .intro
+    {
+        video 
+        {
+            width: 100%;
+            height: 249.496px;
+        }
+        .content-container
+        {   
+            padding: 10px 74px 0 0;
+            .intro-bg-1
+            {
+                display: none;
+                width: 388.357px;
+                height: 390.094px;
+                transform: rotate(-0.593deg);
+                object-fit: cover;
+                
+            }
+            .intro-bg-1-744
+            {
+                display: block !important;
+            }
+            .content-img
+            {
+                left: 18px !important;
+                top: -1px !important;
+                img 
+                {
+                    width: 514px;
+                    height: 342px;
+                    position: relative;
+                    
+                }
+            }
+            .content-box
+            {
+                padding-right: 70px !important;
+                position: relative;
+                right: 43px;
+                h2 
+                {
+                    font-size: 30px !important;
+                    line-height: 35px !important;
+                }
+                
+            }
+            .text-box
+            {
+                    min-width: 391px !important;
+                    padding: 10px 0 20px 0 !important;
+                    p 
+                    {
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+            }
+            .content-btn
+            {
+                img 
+                {
+                    display: none;
+                }
+                a 
+                {
+                    padding: 14px 21px !important;
+                }
+            }
+            .intro-bg-3
+            {
+                display: none;
+            }
+            .intro-bg-3-744
+            {
+                display: block;
+            }
+        }
+    }
+}
+
+// 744px
+@media screen and (max-width: 744px) {
+    .container
+    {
+        max-width: calc(100% - 120px);
+    }
+    // header
+    header
+    {
+        .container
+        {
+            gap: 0px 113px;
+        }
+    }
+}
+
+@media screen and (max-width: 730px){
+    // header
+    header
+    {
+        .container
+        {
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            .bars-icon
+            {
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            nav
+            {
+                display: none;
+            }
+        }
+    }
+
+    // intro 
+    .intro
+    {
+        video 
+        {
+            width: 100%;
+            height: 156px;
+            flex-shrink: 0;
+        }
+
+        .content-container
+        {
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            padding: 0;
+            .content-img
+            {
+                img 
+                {
+                    width: 381px;
+                    height: 253px;
+                    position: relative;
+                    left: -3px;
+                }
+            }
+            .content-box
+            {
+                min-width: 396px;
+                width: 100%;
+                right: 0;
+                padding: 0 !important;
+            }
+            .text-box
+            {
+                padding: 11px 28px 20px 0 !important;
+            }
+            .content-btn
+            {
+                margin-left: 75px;
+                a 
+                {
+                    padding: 12px 25.308px 11.3px 26px !important;
+                }
+                img 
+                {
+                    display: block;
+                }
+            }
+            .intro-bg-1-744
+            {
+                display: none !important;
+            }
+            .intro-bg-1-480
+            {
+                display: block;
+                top: 108px;
+            }
+            .intro-bg-3-744
+            {
+                top: 323px;
+                right: -120px;
+                width: 340.146px;
+                height: 341.667px;
+                transform: rotate(-0.593deg);
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+// 430px
+@media screen and (max-width: 480px) {
+    .container
+    {
+        max-width: calc(100% - 40px);
+        
+    }
+    // header
+    header
+    {
+        .container
+        {
+            padding: 10px 0;
+            .brand-logo
+            {
+                svg
+                {
+                    width: 84px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}

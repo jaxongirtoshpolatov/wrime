@@ -1,0 +1,98 @@
+@use '../utils/mixin';
+
+.intro
+{
+    position: relative;
+    video 
+    {
+        width: 100%;
+        border-radius: 30px;
+    }
+    .content-container
+    {
+        @include mixin.flex(center,center,0,0);
+        margin-top: 13px;
+        padding-right: 139px;
+        .intro-bg-1
+        {
+            position: absolute;
+            left: 0;
+            z-index: 12;
+            top: 232px;
+        }
+        .intro-bg-1-744
+        {
+            position: absolute;
+            left: 0;
+            top: 148px;
+            z-index: 12;
+            display: none;
+        }
+        .intro-bg-3
+        {
+            position: absolute;
+            right: 0;
+            top: 609px;
+        }
+        .intro-bg-3-744
+        {
+            position: absolute;
+            right: 0;
+            top: 365px;
+            display: none;
+        }
+        .intro-bg-1-480
+        {
+            position: absolute;
+            left: 0;
+            top: 365px;
+            display: none;
+        }
+        .content-img
+        {
+            margin-left: -47px;
+            position: relative;
+            left: 31px;
+            top: 10px;
+        }
+        .content-box
+        {
+            padding-right: 50px;
+            h2 
+            {
+                @include mixin.h2;
+            }
+            span 
+            {
+                display: block;
+                &:nth-child(2)
+                {
+                    display: inline-block;
+                }
+            }
+            .text-box
+            {
+                padding: 30px 0;
+                min-width: 483px;
+            }
+            p 
+            {
+                &:first-child
+                {
+                    margin-bottom: 11px;
+                }
+                @include mixin.medium-font;
+            }
+            .content-btn
+            {
+                a 
+                {
+                    @include mixin.medium-font;
+                    @include mixin.flex(center,center,0,0);
+                    padding: 12px 19.308px 11.3px 35px;
+                }
+                border-radius: 30px;
+            }
+        }
+    }
+}

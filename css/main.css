@@ -1,0 +1,365 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: #211510;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1203px;
+  margin: 0 auto;
+}
+
+.btn {
+  background: #5D7845;
+  border: none;
+  outline: none;
+}
+
+.clr {
+  color: #F1BC7F;
+}
+
+.intro {
+  position: relative;
+}
+
+.intro video {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.intro .content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 0;
+  margin-top: 13px;
+  padding-right: 139px;
+}
+
+.intro .content-container .intro-bg-1 {
+  position: absolute;
+  left: 0;
+  z-index: 12;
+  top: 232px;
+}
+
+.intro .content-container .intro-bg-1-744 {
+  position: absolute;
+  left: 0;
+  top: 148px;
+  z-index: 12;
+  display: none;
+}
+
+.intro .content-container .intro-bg-3 {
+  position: absolute;
+  right: 0;
+  top: 609px;
+}
+
+.intro .content-container .intro-bg-3-744 {
+  position: absolute;
+  right: 0;
+  top: 365px;
+  display: none;
+}
+
+.intro .content-container .intro-bg-1-480 {
+  position: absolute;
+  left: 0;
+  top: 365px;
+  display: none;
+}
+
+.intro .content-container .content-img {
+  margin-left: -47px;
+  position: relative;
+  left: 31px;
+  top: 10px;
+}
+
+.intro .content-container .content-box {
+  padding-right: 50px;
+}
+
+.intro .content-container .content-box h2 {
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.intro .content-container .content-box span {
+  display: block;
+}
+
+.intro .content-container .content-box span:nth-child(2) {
+  display: inline-block;
+}
+
+.intro .content-container .content-box .text-box {
+  padding: 30px 0;
+  min-width: 483px;
+}
+
+.intro .content-container .content-box p {
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.intro .content-container .content-box p:first-child {
+  margin-bottom: 11px;
+}
+
+.intro .content-container .content-box .content-btn {
+  border-radius: 30px;
+}
+
+.intro .content-container .content-box .content-btn a {
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 0;
+  padding: 12px 19.308px 11.3px 35px;
+}
+
+header .container {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0 19.2%;
+}
+
+header .container .bars-icon {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+header .nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 74px;
+}
+
+header .nav-menu .nav-link {
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    max-width: calc(100% - 240px);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .container {
+    max-width: calc(100% - 120px);
+  }
+  header .brand-logo svg {
+    width: 113px;
+    height: 40px;
+  }
+  header .container {
+    gap: 0px 113px;
+  }
+  header .nav-menu {
+    gap: 0px 40px;
+  }
+  .intro .intro-bg-1 {
+    width: 324px;
+    top: 330px !important;
+  }
+  .intro .content-img img {
+    width: 550px;
+  }
+  .intro .content-box {
+    padding-right: 109px;
+  }
+  .intro .content-box h2 {
+    font-size: 30px !important;
+  }
+  .intro .content-box h2 span:nth-child(1) {
+    display: inline-block;
+  }
+  .intro .content-box .content-btn {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 1054px) {
+  .intro video {
+    width: 100%;
+    height: 249.496px;
+  }
+  .intro .content-container {
+    padding: 10px 74px 0 0;
+  }
+  .intro .content-container .intro-bg-1 {
+    display: none;
+    width: 388.357px;
+    height: 390.094px;
+    transform: rotate(-0.593deg);
+    object-fit: cover;
+  }
+  .intro .content-container .intro-bg-1-744 {
+    display: block !important;
+  }
+  .intro .content-container .content-img {
+    left: 18px !important;
+    top: -1px !important;
+  }
+  .intro .content-container .content-img img {
+    width: 514px;
+    height: 342px;
+    position: relative;
+  }
+  .intro .content-container .content-box {
+    padding-right: 70px !important;
+    position: relative;
+    right: 43px;
+  }
+  .intro .content-container .content-box h2 {
+    font-size: 30px !important;
+    line-height: 35px !important;
+  }
+  .intro .content-container .text-box {
+    min-width: 391px !important;
+    padding: 10px 0 20px 0 !important;
+  }
+  .intro .content-container .text-box p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .intro .content-container .content-btn img {
+    display: none;
+  }
+  .intro .content-container .content-btn a {
+    padding: 14px 21px !important;
+  }
+  .intro .content-container .intro-bg-3 {
+    display: none;
+  }
+  .intro .content-container .intro-bg-3-744 {
+    display: block;
+  }
+}
+@media screen and (max-width: 744px) {
+  .container {
+    max-width: calc(100% - 120px);
+  }
+  header .container {
+    gap: 0px 113px;
+  }
+}
+@media screen and (max-width: 730px) {
+  header .container {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  header .container .bars-icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  header .container nav {
+    display: none;
+  }
+  .intro video {
+    width: 100%;
+    height: 156px;
+    flex-shrink: 0;
+  }
+  .intro .content-container {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 0;
+  }
+  .intro .content-container .content-img img {
+    width: 381px;
+    height: 253px;
+    position: relative;
+    left: -3px;
+  }
+  .intro .content-container .content-box {
+    min-width: 396px;
+    width: 100%;
+    right: 0;
+    padding: 0 !important;
+  }
+  .intro .content-container .text-box {
+    padding: 11px 28px 20px 0 !important;
+  }
+  .intro .content-container .content-btn {
+    margin-left: 75px;
+  }
+  .intro .content-container .content-btn a {
+    padding: 12px 25.308px 11.3px 26px !important;
+  }
+  .intro .content-container .content-btn img {
+    display: block;
+  }
+  .intro .content-container .intro-bg-1-744 {
+    display: none !important;
+  }
+  .intro .content-container .intro-bg-1-480 {
+    display: block;
+    top: 108px;
+  }
+  .intro .content-container .intro-bg-3-744 {
+    top: 323px;
+    right: -120px;
+    width: 340.146px;
+    height: 341.667px;
+    transform: rotate(-0.593deg);
+    object-fit: contain;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: calc(100% - 40px);
+  }
+  header .container {
+    padding: 10px 0;
+  }
+  header .container .brand-logo svg {
+    width: 84px;
+    height: 30px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

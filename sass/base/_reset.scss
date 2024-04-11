@@ -1,0 +1,38 @@
+// custom css
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body
+{
+    background: #211510;
+}
+
+.wrapper
+{
+    overflow: hidden;
+}
+
+.container
+{
+    max-width: 1203px;
+    margin: 0 auto;
+}
+
+.btn
+{
+    background: #5D7845;
+    border: none;
+    outline: none;
+}
+// spicefic
+.clr
+{
+    color: #F1BC7F;
+}

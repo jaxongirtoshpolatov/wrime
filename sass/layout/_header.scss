@@ -1,0 +1,25 @@
+@use '../utils/mixin';
+header
+{
+    .container
+    {
+        padding: 20px 0;
+        @include mixin.flex(center,start, 0, 19.2%);
+        .bars-icon
+        {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            display: none;
+        }
+    }
+    .nav-menu
+    {
+        @include mixin.flex(center,center, 0, 74px);
+        .nav-link
+        {
+            @include mixin.medium-font;
+        }
+    }
+}

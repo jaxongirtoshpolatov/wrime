@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Noi Grotesk Fix';
+    src: url('NoiGroteskFix-Black.woff2') format('woff2'),
+        url('NoiGroteskFix-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noi Grotesk Fix';
+    src: url('NoiGroteskFix-Bold.woff2') format('woff2'),
+        url('NoiGroteskFix-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noi Grotesk Fix';
+    src: url('NoiGroteskFix-BlackItalic.woff2') format('woff2'),
+        url('NoiGroteskFix-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noi Grotesk Fix';
+    src: url('NoiGroteskFix-Light.woff2') format('woff2'),
+        url('NoiGroteskFix-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noi Grotesk Fix';
+    src: url('NoiGroteskFix-BoldItalic.woff2') format('woff2'),
+        url('NoiGroteskFix-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noi Grotesk Fix';
+    src: url('NoiGroteskFix-MediumItalic.woff2') format('woff2'),
+        url('NoiGroteskFix-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noi Grotesk Fix';
+    src: url('NoiGroteskFix-Regular.woff2') format('woff2'),
+        url('NoiGroteskFix-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noi Grotesk Fix';
+    src: url('NoiGroteskFix-LightItalic.woff2') format('woff2'),
+        url('NoiGroteskFix-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noi Grotesk Fix';
+    src: url('NoiGroteskFix-Medium.woff2') format('woff2'),
+        url('NoiGroteskFix-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noi Grotesk Fix';
+    src: url('NoiGroteskFix-Semibold.woff2') format('woff2'),
+        url('NoiGroteskFix-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noi Grotesk Fix';
+    src: url('NoiGroteskFix-RegularItalic.woff2') format('woff2'),
+        url('NoiGroteskFix-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noi Grotesk Fix';
+    src: url('NoiGroteskFix-SemiboldItalic.woff2') format('woff2'),
+        url('NoiGroteskFix-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noi Grotesk Fix';
+    src: url('NoiGroteskFix-Thin.woff2') format('woff2'),
+        url('NoiGroteskFix-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noi Grotesk Fix';
+    src: url('NoiGroteskFix-ThinItalic.woff2') format('woff2'),
+        url('NoiGroteskFix-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noi Grotesk Fix';
+    src: url('NoiGroteskFix-UltraLightItalic.woff2') format('woff2'),
+        url('NoiGroteskFix-UltraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noi Grotesk Fix';
+    src: url('NoiGroteskFix-UltraLight.woff2') format('woff2'),
+        url('NoiGroteskFix-UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+

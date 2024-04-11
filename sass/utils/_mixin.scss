@@ -1,0 +1,37 @@
+// flex
+@mixin flex($ai, $jc, $row, $col) 
+{
+    display: flex;
+    align-items: $ai;
+    justify-content: $jc;
+    gap: $row $col;
+}
+// nav and medium text font
+@mixin medium-font {
+    color: #FFF;
+    font-family: "Noi Grotesk Fix";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+// card title font stylle
+@mixin card-title 
+{
+    color: #FFF;
+    font-family: "Noi Grotesk Fix";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+// h2 style
+@mixin h2 
+{
+    color: #FFF;
+    font-family: "Noi Grotesk Fix";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px; 
+}
