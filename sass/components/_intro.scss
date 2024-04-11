@@ -82,14 +82,16 @@
             {
                 padding: 30px 0;
                 min-width: 483px;
-            }
-            p 
-            {
-                &:first-child
+                position: relative;
+                z-index: 10;
+                p 
                 {
-                    margin-bottom: 11px;
+                    &:first-child
+                    {
+                        margin-bottom: 11px;
+                    }
+                    @include mixin.medium-font;
                 }
-                @include mixin.medium-font;
             }
             .content-btn
             {
@@ -100,8 +102,43 @@
                     @include mixin.medium-font;
                     @include mixin.flex(center,center,0,0);
                     padding: 12px 19.308px 11.3px 35px;
+                    width: 50px;
+                    height: 50px;
+                    transition: 0.5s;
+                    p 
+                    {
+                        // transition: 0.5s;
+                        visibility: hidden;
+                        opacity: 0;
+                        white-space: nowrap;
+                        
+                    }
+                    img 
+                    {
+                        transition: 0.5s;
+                        position: relative;
+                        left: -88px;
+                    }
                 }
                 border-radius: 30px;
+                &:hover 
+                {
+                    p 
+                    {
+                        display: inline-block;
+                        visibility: visible;
+                        opacity: 1;
+                        transition-delay: 0.5s;
+                    }
+                    a 
+                    {
+                        width: 243px;
+                        img 
+                        {
+                            left: 0;
+                        }
+                    }
+                }
             }
         }
     }

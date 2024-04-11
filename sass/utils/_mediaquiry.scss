@@ -192,17 +192,13 @@
         // .statistic
         .statistic
         {
-            padding: 0;
+            padding: 0px 3px 0 49px;
             margin-top: 29px;
             .natural
             {
                 padding-left: 29px;
             }
-            span 
-            {
-                font-size: 35px;
-                line-height: 35px;
-            }
+            
             p 
             {
                 font-size: 14px;
@@ -292,6 +288,7 @@
                 img 
                 {
                     display: block;
+                    margin-left: 14px;
                 }
             }
             .intro-bg-1-744
@@ -319,6 +316,11 @@
             padding: 0 50px 0 0;
             align-items: start;
             margin-top: 65px;
+            span 
+            {
+                font-size: 35px;
+                line-height: 35px;
+            }
             p 
             {
                 max-width: 103px;
@@ -367,6 +369,13 @@
                 transform: translateX(-50%);
             }
         }
+       
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .intro
+    {
         // .statistic
         .statistic
         {
