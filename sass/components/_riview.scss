@@ -1,0 +1,54 @@
+// call mixin
+@use "../utils/mixin";
+.riview
+{
+    margin-top: 150px;
+    h2  
+    {
+        @include mixin.h2;
+        text-align: center;
+    }
+    .swiper
+    {
+        margin-top: 50px;
+        width: 100%;
+        min-height: 273px;
+        height: auto;
+        &-slide 
+        {
+            border-radius: 20px;
+            background: #FFF;
+            position: relative;
+            min-height: 273px;
+        }
+        .slide-nav
+        {
+            padding: 18px 22px 0 22px;
+            @include mixin.flex(center,space-between,0,0);
+            margin-bottom: 4px;
+            h3 
+            {
+                color: #211510;
+                font-family: "Noi Grotesk Fix";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+        .review-content
+        {
+            padding: 0 24px 14px 24px;
+            @include mixin.medium-font;
+            color: #000;
+        }
+        .more-reading
+        {
+            @include mixin.medium-font;
+            margin-left: 24px;
+            color: #5D7845;
+            display: inline-block;
+        }
+    }
+
+}

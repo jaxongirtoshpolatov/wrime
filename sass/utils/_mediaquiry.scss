@@ -11,6 +11,7 @@
             grid-template-columns: repeat(auto-fill, minmax(379px, 1fr));
         }
     }
+   
 }
 
 @media screen and (max-width: 1200px) {
@@ -25,6 +26,14 @@
             }
         }
     }
+     // riview
+     .riview
+     {
+         .container
+         {
+             max-width: 100%;
+         }
+     }
 }
 
 @media screen and (max-width: 1100px) {
@@ -312,6 +321,37 @@
         {
             width: 100px;
             height: 100px;
+        }
+    }
+    // riviews
+    .riview
+    {
+        margin-top: 100px;
+        h2 
+        {
+            font-size: 30px;
+            line-height: 35px;
+        }
+        .swiper
+        {
+            &-slide 
+            {
+                min-width: 216px;
+            }
+            margin-top: 30px;
+            .slide-nav
+            {
+                padding: 16px 20px 10px 20px;
+                h3 
+                {
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+            .review-content
+            {
+                font-size: 14px;
+            }
         }
     }
 }

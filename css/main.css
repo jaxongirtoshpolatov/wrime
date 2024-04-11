@@ -43,7 +43,6 @@ body {
 
 .buy {
   text-align: center;
-  margin-bottom: 150px;
 }
 
 .buy h2 {
@@ -414,6 +413,75 @@ body {
   margin-bottom: 13px;
 }
 
+.riview {
+  margin-top: 150px;
+}
+
+.riview h2 {
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+  text-align: center;
+}
+
+.riview .swiper {
+  margin-top: 50px;
+  width: 100%;
+  min-height: 273px;
+  height: auto;
+}
+
+.riview .swiper-slide {
+  border-radius: 20px;
+  background: #FFF;
+  position: relative;
+  min-height: 273px;
+}
+
+.riview .swiper .slide-nav {
+  padding: 18px 22px 0 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 0;
+  margin-bottom: 4px;
+}
+
+.riview .swiper .slide-nav h3 {
+  color: #211510;
+  font-family: "Noi Grotesk Fix";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.riview .swiper .review-content {
+  padding: 0 24px 14px 24px;
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #000;
+}
+
+.riview .swiper .more-reading {
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 24px;
+  color: #5D7845;
+  display: inline-block;
+}
+
 .why-wrime {
   text-align: center;
   padding-top: 197px;
@@ -577,6 +645,9 @@ header .nav-menu .nav-link {
 @media screen and (max-width: 1200px) {
   .why-wrime .why-wrime-card:not(:last-child) {
     margin-right: 71px;
+  }
+  .riview .container {
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -761,6 +832,29 @@ header .nav-menu .nav-link {
   .buy img {
     width: 100px;
     height: 100px;
+  }
+  .riview {
+    margin-top: 100px;
+  }
+  .riview h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .riview .swiper {
+    margin-top: 30px;
+  }
+  .riview .swiper-slide {
+    min-width: 216px;
+  }
+  .riview .swiper .slide-nav {
+    padding: 16px 20px 10px 20px;
+  }
+  .riview .swiper .slide-nav h3 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .riview .swiper .review-content {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 744px) {
