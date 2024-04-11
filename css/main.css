@@ -29,6 +29,58 @@ body {
   color: #F1BC7F;
 }
 
+.description {
+  padding: 122px 133px 102px 0;
+  position: relative;
+}
+
+.description img:nth-child(1) {
+  position: absolute;
+  right: 0;
+  top: 67px;
+}
+
+.description img:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 206px;
+}
+
+.description .descr-content {
+  border-radius: 30px;
+  padding: 0 55px 21px 55px;
+  border: 1px solid #F1BC7F;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 48px;
+}
+
+.description .descr-content figure img {
+  position: relative;
+  top: -31px;
+}
+
+.description .descr-content .content-box {
+  max-width: 476px;
+  padding-top: 49px;
+}
+
+.description .descr-content .content-box p {
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.description .descr-content .content-box p:nth-child(2) {
+  margin-top: 15px;
+  color: #F1BC7F;
+}
+
 .intro {
   position: relative;
 }
@@ -226,6 +278,86 @@ body {
   left: -100%;
 }
 
+footer {
+  background: linear-gradient(0deg, #211510 0%, rgba(33, 21, 16, 0) 100%);
+  position: relative;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 0;
+  flex-direction: column;
+}
+
+footer .nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 74px;
+}
+
+footer .nav-menu .nav-link {
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+footer .brand-logo {
+  margin: 50px 0;
+}
+
+footer .social ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 25px;
+}
+
+footer .author {
+  margin: 51px 0 35px 0;
+}
+
+footer .author p {
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+footer .author p a {
+  color: #fff;
+}
+
+footer .footer-postion-1440 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+footer .footer-postion-744 {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  z-index: -1;
+}
+
+footer .footer-postion-480 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: none;
+  z-index: -1;
+}
+
 header .container {
   padding: 20px 0;
   display: flex;
@@ -367,6 +499,17 @@ header .nav-menu .nav-link {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 1012px) {
+  footer .brand-logo {
+    margin: 40px 0px 31px 0px;
+  }
+  footer .author {
+    margin: 27px 0px 45px 0px;
+  }
+  footer .footer-postion-1440 {
+    display: none;
+  }
+}
 @media screen and (max-width: 744px) {
   .container {
     max-width: calc(100% - 120px);
@@ -383,6 +526,10 @@ header .nav-menu .nav-link {
   }
   .intro .statistic p {
     font-size: 14px;
+  }
+  footer .nav-menu {
+    flex-direction: column;
+    row-gap: 20px;
   }
 }
 @media screen and (max-width: 730px) {
@@ -471,6 +618,13 @@ header .nav-menu .nav-link {
   }
   .intro .statistic .natural {
     padding-left: 18px;
+  }
+  footer .footer-postion-744 {
+    display: none;
+  }
+  footer .footer-postion-480 {
+    right: 18px;
+    display: block;
   }
 }
 @media screen and (max-width: 480px) {

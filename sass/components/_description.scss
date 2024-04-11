@@ -1,0 +1,53 @@
+@use '../utils/mixin';
+
+.description
+{
+    padding: 122px 133px 102px 0;
+    position: relative;
+    img 
+    {
+        &:nth-child(1)
+        {
+            position: absolute;
+            right: 0;
+            top: 67px;
+        }
+        &:nth-child(2)
+        {
+            position: absolute;
+            left: 0;
+            top: 206px;
+        }
+    }
+    .descr-content 
+    {
+        border-radius: 30px;
+        padding: 0 55px 21px 55px;
+        border: 1px solid #F1BC7F;
+        width: 100%;
+        @include mixin.flex(center,center,0,48px);
+
+        figure 
+        {
+            img 
+            {
+                position: relative;
+                top: -31px;
+            }
+        }
+        .content-box
+        {
+            max-width: 476px;
+            padding-top: 49px;
+            p 
+            {
+                &:nth-child(2)
+                {
+                    margin-top: 15px;
+                    color: #F1BC7F;
+                }
+                @include mixin.medium-font;
+            }
+        }
+    }
+}

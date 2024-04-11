@@ -1,0 +1,67 @@
+// call mixin 
+@use '../utils/mixin';
+
+footer
+{
+    background: linear-gradient(0deg, #211510 0%, rgba(33, 21, 16, 0.00) 100%);
+    position: relative;
+    .container
+    {
+        @include mixin.flex(center,center,0,0);
+        flex-direction: column;
+    }
+    .nav-menu
+    {
+        @include mixin.flex(center,center,0,74px);
+        .nav-link
+        {
+            @include mixin.medium-font;
+        }
+    }
+    .brand-logo
+    {
+        margin: 50px 0;
+    }
+    .social
+    {
+        ul 
+        {
+            @include mixin.flex(center,center,0,25px);
+        }
+    }
+    .author
+    {
+        margin: 51px 0 35px 0;
+        p 
+        {
+            @include mixin.medium-font;
+            text-align: center;
+            a
+            {
+                color: #fff;
+            }
+        }
+    }
+    .footer-postion-1440
+    {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .footer-postion-744
+    {
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+        z-index: -1;
+    }
+    .footer-postion-480
+    {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: none;
+        z-index: -1;
+    }
+}
