@@ -41,6 +41,28 @@ body {
   text-transform: uppercase;
 }
 
+.buy {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.buy h2 {
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+  margin-bottom: 50px;
+}
+
+.buy-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 30px;
+}
+
 .description {
   padding: 122px 133px 102px 0;
   position: relative;
@@ -727,6 +749,18 @@ header .nav-menu .nav-link {
   }
   .products .product-info .purchase a:not(:nth-child(2)) {
     margin-bottom: 10px;
+  }
+  .buy h2 {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 30px;
+  }
+  .buy .buy-link {
+    column-gap: 50px;
+  }
+  .buy img {
+    width: 100px;
+    height: 100px;
   }
 }
 @media screen and (max-width: 744px) {

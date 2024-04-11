@@ -295,6 +295,25 @@
             }
         }
     }
+    // buy
+    .buy
+    {
+        h2 
+        {
+            font-size: 30px;
+            line-height: 35px;
+            margin-bottom: 30px;
+        }
+        .buy-link
+        {
+            column-gap: 50px;
+        }
+        img 
+        {
+            width: 100px;
+            height: 100px;
+        }
+    }
 }
 
 // 744px
