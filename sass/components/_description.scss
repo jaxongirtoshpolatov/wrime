@@ -11,23 +11,12 @@
     .descr-content
     {
         position: relative;
-        @include mixin.flex(center,center,0,0);
-        padding: 49px 55px 43px;
+        @include mixin.flex(center,space-between,0,21px);
+        padding: 0px 55px 0px;
         figure 
         {
             position: relative;
-            left: 0;
-            top: 0;
-            width: 362px;
-            height: 256px;
-            img 
-            {
-                position: absolute;
-                top: -46px;
-                left: 55px;
-                bottom: 21px;
-
-            }
+            top: -31px;
         }
         .content-box
         {

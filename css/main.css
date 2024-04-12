@@ -93,24 +93,14 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 0 0;
-  padding: 49px 55px 43px;
+  justify-content: space-between;
+  gap: 0 21px;
+  padding: 0px 55px 0px;
 }
 
 .description .descr-content figure {
   position: relative;
-  left: 0;
-  top: 0;
-  width: 362px;
-  height: 256px;
-}
-
-.description .descr-content figure img {
-  position: absolute;
-  top: -46px;
-  left: 55px;
-  bottom: 21px;
+  top: -31px;
 }
 
 .description .descr-content .content-box {
@@ -977,6 +967,26 @@ header .nav-menu .nav-link {
   .riview .container {
     max-width: 100%;
   }
+  .description {
+    padding: 122px 0 102px 0;
+  }
+  .description figure {
+    top: 0 !important;
+  }
+  .description figure img {
+    width: 276px;
+    height: 195px;
+  }
+  .description .descr-content {
+    padding: 0px 35px 0px 27px;
+  }
+  .description .content-box {
+    padding: 30px 0;
+  }
+  .description .content-box p {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+  }
 }
 @media screen and (max-width: 1100px) {
   .container {
@@ -1404,6 +1414,17 @@ header .nav-menu .nav-link {
   .subsicribe form .btn {
     padding: 15px 22px 16px 21px;
   }
+  .description figure {
+    position: absolute !important;
+    top: -122px !important;
+  }
+  .description .descr-content {
+    padding: 103px 35px 42px 40px;
+    flex-direction: column;
+  }
+  .description .descr-content .content-box {
+    padding: 0;
+  }
 }
 @media screen and (max-width: 480px) {
   .container {
@@ -1422,6 +1443,9 @@ header .nav-menu .nav-link {
     left: 50%;
     transform: translateX(-50%);
   }
+  .description .descr-content p {
+    max-width: 315px;
+  }
 }
 @media screen and (max-width: 479px) {
   .intro .statistic {
@@ -1438,6 +1462,9 @@ header .nav-menu .nav-link {
     min-width: unset;
     width: 100%;
     margin-left: 0;
+  }
+  .description .descr-content {
+    padding: 83px 24px 16px 24px;
   }
 }
 
