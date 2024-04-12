@@ -8,6 +8,7 @@
 
 body {
   background: #211510;
+  font-family: "Noi Grotesk Fix";
 }
 
 .wrapper {
@@ -39,6 +40,15 @@ body {
   line-height: normal;
   text-decoration-line: underline;
   text-transform: uppercase;
+}
+
+.input {
+  border-radius: 50px;
+  border: 1px solid #D9D9D9;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px 0 16px 20px;
+  outline: none;
+  width: 100%;
 }
 
 .buy {
@@ -411,6 +421,144 @@ body {
 
 .products .product-info .purchase a:not(:nth-child(2)) {
   margin-bottom: 13px;
+}
+
+.question {
+  margin-top: 150px;
+}
+
+.question h2 {
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.question form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 30px;
+}
+
+.question form input {
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.5;
+  font-weight: 400;
+}
+
+.question form input::placeholder {
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-weight: 400;
+}
+
+.question form .left-input {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px 0;
+  flex-direction: column;
+}
+
+.question form .left-input input, .question form .left-input select {
+  min-width: 380px;
+  width: 100%;
+}
+
+.question form .left-input select {
+  padding-right: 22px;
+}
+
+.question form .left-input select option {
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.5;
+  font-weight: 400;
+}
+
+.question form .right-input textarea {
+  min-width: 430px;
+  height: 110px;
+  width: 100%;
+  padding: 10px 0 0 20px;
+  border-radius: 20px;
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  resize: none;
+}
+
+.question form .right-input textarea::placeholder {
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.5;
+  min-width: 190px;
+}
+
+.question form .right-input .right-input-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 29px;
+  margin-top: 10px;
+}
+
+.question form .right-input .right-input-bottom p {
+  font-size: 10px;
+  font-family: "Noi Grotesk Fix";
+  font-weight: 400;
+  max-width: 217px;
+  color: #fff;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0 0;
+}
+
+.question form .right-input button {
+  padding: 15px 49px 16px 47px;
+  border-radius: 50px;
+  color: #FFF;
+  text-align: center;
+  font-family: "Noi Grotesk Fix";
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.question .alert-744 {
+  display: none;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: 10px;
 }
 
 .riview {
@@ -857,6 +1005,33 @@ header .nav-menu .nav-link {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 900px) {
+  .question {
+    margin-top: 100px;
+  }
+  .question h2 {
+    font-size: 30px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+  .question form {
+    column-gap: 19px;
+  }
+  .question form .left-input input, .question form .left-input select {
+    min-width: unset;
+    width: 302px;
+  }
+  .question form .right-input textarea {
+    min-width: unset;
+    width: 302px;
+  }
+  .question form .right-input .alert {
+    display: none !important;
+  }
+  .question .alert-744 {
+    display: block;
+  }
+}
 @media screen and (max-width: 744px) {
   .container {
     max-width: calc(100% - 120px);
@@ -877,6 +1052,9 @@ header .nav-menu .nav-link {
   footer .nav-menu {
     flex-direction: column;
     row-gap: 20px;
+  }
+  .question .alert-744 {
+    text-align: start;
   }
 }
 @media screen and (max-width: 730px) {
@@ -973,7 +1151,7 @@ header .nav-menu .nav-link {
     display: none;
   }
   footer .footer-postion-480 {
-    right: 18px;
+    right: 0;
     display: block;
   }
   .why-wrime .why-wrime-cards {
@@ -990,6 +1168,16 @@ header .nav-menu .nav-link {
   }
   .why-wrime .why-wrime-card p {
     margin-top: 4px;
+  }
+  .question form {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .question form input, .question form select, .question form textarea, .question form button, .question form .left-input, .question form .right-input {
+    width: 100% !important;
+  }
+  .question .alert-744 {
+    text-align: center;
   }
 }
 @media screen and (max-width: 480px) {

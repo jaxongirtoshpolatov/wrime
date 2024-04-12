@@ -356,6 +356,50 @@
     }
 }
 
+// 900px
+@media screen and (max-width: 900px) {
+    // question form
+    .question
+    {
+        margin-top: 100px;
+        h2 
+        {
+            font-size: 30px;
+            line-height: 50px;
+            margin-bottom: 30px;
+        }
+        form 
+        {
+            column-gap: 19px;
+            .left-input
+            {
+                input, select
+                {
+                    min-width: unset;
+                    width: 302px;
+                }
+            }
+            .right-input
+            {
+                textarea
+                {
+                    min-width: unset;
+                    width:302px;
+                }
+                .alert
+                {
+                    display: none !important;
+                }
+            }
+            
+        }
+        .alert-744
+        {
+            display: block;
+        }
+    }
+}
+
 // 744px
 @media screen and (max-width: 744px) {
     .container
@@ -398,6 +442,14 @@
         {
             flex-direction: column;
             row-gap: 20px;
+        }
+    }
+    // .question
+    .question
+    {
+        .alert-744
+        {
+            text-align: start;
         }
     }
 }
@@ -543,7 +595,7 @@
         }
         .footer-postion-480
         {
-            right: 18px;
+            right: 0;
             display: block;
         }
     }
@@ -567,6 +619,23 @@
             {
                 margin-top: 4px;
             }
+        }
+    }
+    // .question
+    .question
+    {
+        form 
+        {
+            flex-direction: column;
+            row-gap: 10px;
+            input, select, textarea, button, .left-input, .right-input
+            {
+                width: 100% !important;
+            }
+        }
+        .alert-744
+        {
+            text-align: center;
         }
     }
 }
