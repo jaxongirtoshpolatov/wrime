@@ -75,6 +75,16 @@
             {
                 width: 550px;
             }
+            .vapour-box
+            {
+                position: absolute;
+                left: 31%;
+                top: 21%;
+                span 
+                {
+                    min-width: 4px !important;
+                }
+            }
         }
         .content-box
         {
@@ -166,8 +176,6 @@
                 {
                     width: 514px;
                     height: 342px;
-                    position: relative;
-                    
                 }
             }
             .content-box
@@ -440,6 +448,22 @@
     // .intro
     .intro
     {
+        .content-img 
+        {
+            .vapour-box
+            {
+                left: 25% !important;
+                top: 9% !important;
+                .vapour
+                {
+                    span 
+                    {
+                        min-width: 2px !important;
+                    }
+
+                }
+            }
+        }
         // .statistic
         .statistic
         {

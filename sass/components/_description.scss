@@ -2,49 +2,43 @@
 
 .description
 {
-    padding: 122px 133px 102px 0;
-    position: relative;
-    img 
-    {
-        &:nth-child(1)
-        {
-            position: absolute;
-            right: 0;
-            top: 67px;
-        }
-        &:nth-child(2)
-        {
-            position: absolute;
-            left: 0;
-            top: 206px;
-        }
-    }
-    .descr-content 
+    padding: 122px 133px 102px 74px;
+    .container
     {
         border-radius: 30px;
-        padding: 0 55px 21px 55px;
         border: 1px solid #F1BC7F;
-        width: 100%;
-        @include mixin.flex(center,center,0,48px);
-
+    }
+    .descr-content
+    {
+        position: relative;
+        @include mixin.flex(center,center,0,0);
+        padding: 49px 55px 43px;
         figure 
         {
+            position: relative;
+            left: 0;
+            top: 0;
+            width: 362px;
+            height: 256px;
             img 
             {
-                position: relative;
-                top: -31px;
+                position: absolute;
+                top: -46px;
+                left: 55px;
+                bottom: 21px;
+
             }
         }
         .content-box
         {
             max-width: 476px;
-            padding-top: 49px;
+            width: 100%;
             p 
             {
                 &:nth-child(2)
                 {
-                    margin-top: 15px;
                     color: #F1BC7F;
+                    margin-top: 15px;
                 }
                 @include mixin.medium-font;
             }
