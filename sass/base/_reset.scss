@@ -59,5 +59,13 @@ body
     background: rgba(255, 255, 255, 0.10);
     padding: 15px 0 16px 20px;
     outline: none;
-    width: 100%;
+    &::placeholder
+    {
+        color: #FFF;
+        font-family: "Noi Grotesk Fix";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 }

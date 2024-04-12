@@ -398,6 +398,29 @@
             display: block;
         }
     }
+    // subsicribe
+    .subsicribe
+    {
+        margin-top: 111px;
+        form 
+        {
+            h4 
+            {
+                font-size: 14px;
+                margin-right: 17px;
+                max-width: 198px;
+            }
+            input 
+            {
+                min-width: 245px;
+            }
+            .btn 
+            {
+                padding: 15px 29px 16px 28px;
+                // max-width: 156px;
+            }
+        }
+    }
 }
 
 // 744px
@@ -638,6 +661,28 @@
             text-align: center;
         }
     }
+    // subsicribe
+    .subsicribe
+    {
+        form 
+        {
+            h4 
+            {
+                max-width: 295px;
+                margin: 0;
+                margin-bottom: 20px;
+            }
+            flex-direction: column;
+            .input 
+            {
+                min-width: 235px;
+            }
+            .btn 
+            {
+                padding: 15px 22px 16px 21px;
+            }
+        }
+    }
 }
 
 // 430px
@@ -687,6 +732,28 @@
         .statistic
         {
             padding: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    // subsicribe
+    .subsicribe
+    {
+        form 
+        {
+            .input-box
+            {
+                width: 100%;
+                flex-direction: column;
+                row-gap: 10px;
+                .input, .btn 
+                {
+                    min-width: unset;
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
         }
     }
 }

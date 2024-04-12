@@ -48,7 +48,15 @@ body {
   background: rgba(255, 255, 255, 0.1);
   padding: 15px 0 16px 20px;
   outline: none;
-  width: 100%;
+}
+
+.input::placeholder {
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .buy {
@@ -630,6 +638,51 @@ body {
   display: inline-block;
 }
 
+.subsicribe {
+  margin-top: 161px;
+}
+
+.subsicribe form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 0;
+}
+
+.subsicribe form .input-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 0;
+}
+
+.subsicribe form h4 {
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  max-width: 380px;
+  margin-right: 31px;
+}
+
+.subsicribe form input {
+  padding: 15px 0 16px 20px;
+  min-width: 276px;
+}
+
+.subsicribe form .btn {
+  padding: 15px 39px 16px 38px;
+  margin-left: 10px;
+  border-radius: 50px;
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-weight: 700;
+}
+
 .why-wrime {
   text-align: center;
   padding-top: 197px;
@@ -1031,6 +1084,20 @@ header .nav-menu .nav-link {
   .question .alert-744 {
     display: block;
   }
+  .subsicribe {
+    margin-top: 111px;
+  }
+  .subsicribe form h4 {
+    font-size: 14px;
+    margin-right: 17px;
+    max-width: 198px;
+  }
+  .subsicribe form input {
+    min-width: 245px;
+  }
+  .subsicribe form .btn {
+    padding: 15px 29px 16px 28px;
+  }
 }
 @media screen and (max-width: 744px) {
   .container {
@@ -1179,6 +1246,20 @@ header .nav-menu .nav-link {
   .question .alert-744 {
     text-align: center;
   }
+  .subsicribe form {
+    flex-direction: column;
+  }
+  .subsicribe form h4 {
+    max-width: 295px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .subsicribe form .input {
+    min-width: 235px;
+  }
+  .subsicribe form .btn {
+    padding: 15px 22px 16px 21px;
+  }
 }
 @media screen and (max-width: 480px) {
   .container {
@@ -1201,6 +1282,18 @@ header .nav-menu .nav-link {
 @media screen and (max-width: 479px) {
   .intro .statistic {
     padding: 0;
+  }
+}
+@media screen and (max-width: 420px) {
+  .subsicribe form .input-box {
+    width: 100%;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .subsicribe form .input-box .input, .subsicribe form .input-box .btn {
+    min-width: unset;
+    width: 100%;
+    margin-left: 0;
   }
 }
 

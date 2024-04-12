@@ -1,0 +1,37 @@
+// call mixin
+@use "../utils/mixin";
+
+.subsicribe
+{
+    margin-top: 161px;
+    form 
+    {
+        @include mixin.flex(center,center,0,0);
+        .input-box
+        {
+            @include mixin.flex(center,center,0,0);
+        }
+        h4 
+        {
+            color: #FFF;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            max-width: 380px;
+            margin-right: 31px;
+        }
+        input 
+        {
+            padding: 15px 0 16px 20px;
+            min-width: 276px;
+        }
+        .btn 
+        {
+            padding: 15px 39px 16px 38px;
+            margin-left: 10px;
+            border-radius: 50px;
+            @include mixin.medium-font;
+            font-weight: 700;
+        }
+    }
+}
