@@ -1590,6 +1590,9 @@ header .nav-menu .nav-link {
   .description .content-box {
     padding: 103px 0 20px 20px;
   }
+  .products-cards {
+    grid-template-columns: auto;
+  }
 }
 @media screen and (max-width: 420px) {
   .subsicribe form .input-box {

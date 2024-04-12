@@ -1008,6 +1008,8 @@
             }
         }
     }
+    // .products
+    
 }
 
 @media screen and (max-width: 479px) {
@@ -1031,6 +1033,13 @@
         .content-box
         {
             padding: 103px 0 20px 20px;
+        }
+    }
+    .products
+    {
+        &-cards
+        {
+            grid-template-columns: auto;
         }
     }
     
