@@ -3,7 +3,7 @@
 
 .subsicribe
 {
-    margin-top: 161px;
+    margin-top: 155px;
     form 
     {
         @include mixin.flex(center,center,0,0);
@@ -24,6 +24,10 @@
         {
             padding: 15px 0 16px 20px;
             min-width: 276px;
+            &::placeholder
+            {
+                opacity: 0.5;
+            }
         }
         .btn 
         {

@@ -37,7 +37,7 @@
     // description
     .description
     {
-        padding: 122px 0 102px 0;
+        padding: 96px 0 102px 0;
         figure
         {
             top: 0 !important;
@@ -50,12 +50,13 @@
         }
         .descr-content
         {
-            padding: 0px 35px 0px 27px;
+            padding: 0px 11px 0px 0px;
+            justify-content: center;
         }
         .content-box
         {
-            // min-width: 315px;
-            padding: 30px 0;
+            padding: 37px 0 30px 0;
+
             p 
             {
                 font-size: 14px !important;
@@ -148,12 +149,13 @@
         {
             font-size: 30px;
             line-height: 35px;
+            margin-bottom: 29px;
         }
         .why-wrime-card
         {
             &:not(:last-child)
             {
-                margin-right: 67px;
+                margin-right: 58px;
             }
             img 
             {
@@ -165,6 +167,7 @@
                 font-size: 16px;
                 font-weight: 600;
                 max-width: 113px;
+                margin-top: 2px;
             }
         }
     }
@@ -276,7 +279,14 @@
         }
         .author
         {
-            margin: 27px 0px 45px 0px;
+            margin: 21px 0px 64px 0px;
+            p 
+            {
+                &:last-child
+                {
+                    margin-top: 11px;
+                }
+            }
         }
         .footer-postion-1440
         {
@@ -398,7 +408,7 @@
     // question form
     .question
     {
-        margin-top: 100px;
+        margin-top: 85px;
         h2 
         {
             font-size: 30px;
@@ -408,6 +418,7 @@
         form 
         {
             column-gap: 19px;
+            padding-left: 0;
             .left-input
             {
                 input, .select
@@ -426,6 +437,10 @@
                 .alert
                 {
                     display: none !important;
+                }
+                .btn 
+                {
+                    width: 100%;
                 }
             }
             
@@ -456,6 +471,57 @@
                 padding: 15px 29px 16px 28px;
                 // max-width: 156px;
             }
+        }
+    }
+    // intro
+    .intro
+    {
+        .text-box
+        {
+            p 
+            {
+                font-size: 14px !important;
+            }
+        }
+    }
+    // footer
+    footer 
+    {
+        padding-top: 131px;
+        .brand-logo
+        {
+            img 
+            {
+
+                width: 112.567px;
+                height: 39.998px;
+            }
+        }
+    }
+    .why-wrime
+    {
+        padding-top: 36px;
+        padding-bottom: 101px;
+    }
+    // description
+    .description
+    {
+        .container
+        {
+            max-width:674px;
+            height: 246px;
+        }
+        .descr-content
+        {
+            padding: 0px 31px 0px 0px;
+            figure 
+            {
+                left: 26px;
+            }
+        }
+        .content-box
+        {
+            padding: 37px 0 30px 26px;
         }
     }
 }
@@ -510,16 +576,17 @@
         }
     }
     // products
-   
     // footer
-    footer
+    footer 
     {
-        .nav-menu
+        .brand-logo 
         {
-            flex-direction: column;
-            row-gap: 20px;
+            width: 112.567px;
+            height: 39.998px;
+
         }
     }
+    
     // .question
     .question
     {
@@ -659,12 +726,46 @@
     {
         &-cards 
         {
-            grid-template-columns: auto;
+            grid-template-columns: auto auto;
+        }
+        &-card
+        {
+            .product-photo
+            {
+                width: 188px !important;
+                height: 222px !important;
+            }
+        }
+        .product-info
+        {
+            h3 
+            {
+                padding: 39px 0 6px 0;
+            }
+            p 
+            {
+                font-size: 12px;
+            }
+            .clr
+            {
+                font-size: 12px;
+                margin: 6px 0 30px 0;
+            }
+            .link
+            {
+                font-size: 14px !important;
+                font-weight: 700;
+            }
         }
     }
     // footer
     footer 
     {
+        .nav-menu
+        {
+            flex-direction: column;
+            row-gap: 20px;
+        }
         .footer-postion-744
         {
             display: none;
@@ -746,19 +847,113 @@
     // description
     .description
     {
-        figure 
+        .container
         {
-            position: absolute !important;
-            top: -122px !important;
+            max-width: calc(100% - 120px);
+            height: auto;
         }
         .descr-content
         {
-            padding: 103px 35px 42px 40px;
             flex-direction: column;
-            .content-box
+            figure 
             {
-                padding: 0;
+                position: absolute;
+                top: -122px !important;
+                left: 50%;
+                transform: translateX(-50%);
             }
+        }
+        .content-box
+        {
+            padding: 103px 35px 42px 40px;
+        }
+    }
+    
+}
+
+// 729
+@media screen and (max-width: 729px) {
+//    description
+    .description
+    {
+        padding: 185px 48px 0px 0;
+        .container
+        {
+            max-width: 390px;
+            height: 308px;
+        }
+        .descr-content
+        {
+            figure 
+            {
+                left: 39px;
+                transform: translateX(0);
+            }
+        }
+        .content-box
+        {
+            padding: 103px 0 42px 40px;
+            p:nth-child(2)
+            {
+                margin-top: 11px !important;
+            }
+        }
+        
+    }
+    // products
+    .products
+    {
+        padding-top: 34px;
+        .products-card
+        {
+            height: 425px;
+        }
+        .product-info
+        {
+            width: 189px;
+            height: 242px;
+        }
+    }
+    // why-wrime
+    .why-wrime
+    {
+        padding-top: 18px;
+        padding-bottom: 88px;
+    }
+    // review
+    .riview
+    {
+        margin-top: 74px;
+    }
+    // question
+    .question
+    {
+        margin-top: 59px;
+        h2 
+        {
+            margin-bottom: 20px;
+        }
+        form .right-input .right-input-bottom
+        {
+            margin-top: 3px;
+        }
+        .alert-744
+        {
+            text-align: start;
+        }
+    }
+    // subsicribe
+    .subsicribe
+    {
+        margin-top: 79px;
+    }
+    // footer
+    footer
+    {
+        padding-top: 121px;
+        .author
+        {
+            margin: 40px 0px 72px 0px;
         }
     }
 }
@@ -804,6 +999,7 @@
     // description
     .description
     {
+        padding-bottom: 0 !important;
         .descr-content
         {
             p 
@@ -823,6 +1019,21 @@
             padding: 0;
         }
     }
+    // description
+    .description
+    {
+        padding: 185px 0 102px 0;
+        .container
+        {
+            max-width: calc(100% - 120px);
+            height: auto;
+        }
+        .content-box
+        {
+            padding: 103px 0 20px 20px;
+        }
+    }
+    
 }
 
 @media screen and (max-width: 420px) {
@@ -850,7 +1061,15 @@
     {
         .descr-content
         {
-            padding: 83px 24px 16px 24px;
+            padding: 10px;
+            figure 
+            {
+                left: 0;
+            }
+        }
+        .content-box
+        {
+            padding-top: 80px;
         }
     }
 }
