@@ -39,3 +39,19 @@
       }
     })
 });
+
+// select button
+let select, option, sellected;
+      select = document.querySelector(".select");
+      sellected = document.querySelector(".selected");
+      option = document.querySelectorAll(".option");
+
+      select.addEventListener("click", () => {
+        select.classList.toggle("active");
+      });
+
+      option.forEach((item) => {
+        item.addEventListener("click", () => {
+          sellected.textContent = item.textContent;
+        });
+      });
