@@ -1382,8 +1382,11 @@ header .nav-menu .nav-link {
     flex-direction: column;
     row-gap: 10px;
   }
-  .question form input, .question form select, .question form textarea, .question form button, .question form .left-input, .question form .right-input {
+  .question form input, .question form .select, .question form textarea, .question form button, .question form .left-input, .question form .right-input {
     width: 100% !important;
+  }
+  .question form .select .option-menu {
+    background-color: rgba(255, 255, 255, 0.5);
   }
   .question .alert-744 {
     text-align: center;
