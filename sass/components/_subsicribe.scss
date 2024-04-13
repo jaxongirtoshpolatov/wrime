@@ -24,6 +24,7 @@
         {
             padding: 15px 0 16px 20px;
             min-width: 276px;
+            @include mixin.medium-font;
             &::placeholder
             {
                 opacity: 0.5;

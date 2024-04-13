@@ -8,6 +8,29 @@
         width: 100%;
         border-radius: 30px;
     }
+    .intro-video-container
+    {
+        position: relative;
+        .control
+        {
+            position: absolute;
+            top: 185px;
+            left: 50%;
+            transform: translateX(-50%);
+            button 
+            {
+                background-color: transparent;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                img 
+                {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
     .content-container, .content-top
     {
         figure 

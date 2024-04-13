@@ -131,6 +131,29 @@ body {
   border-radius: 30px;
 }
 
+.intro .intro-video-container {
+  position: relative;
+}
+
+.intro .intro-video-container .control {
+  position: absolute;
+  top: 185px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.intro .intro-video-container .control button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.intro .intro-video-container .control button img {
+  width: 100px;
+  height: 100px;
+}
+
 .intro .content-container, .intro .content-top {
   display: flex;
   align-items: center;
@@ -786,6 +809,12 @@ body {
 .subsicribe form input {
   padding: 15px 0 16px 20px;
   min-width: 276px;
+  color: #FFF;
+  font-family: "Noi Grotesk Fix";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .subsicribe form input::placeholder {
