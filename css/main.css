@@ -1286,6 +1286,14 @@ header .nav-menu .nav-link {
   .subsicribe form .btn {
     padding: 15px 29px 16px 28px;
   }
+  .intro .intro-video-container .control {
+    top: 99px;
+    left: 451px;
+  }
+  .intro .intro-video-container .control button img {
+    width: 50px;
+    height: 50px;
+  }
   .intro .text-box p {
     font-size: 14px !important;
   }
@@ -1366,6 +1374,14 @@ header .nav-menu .nav-link {
     width: 100%;
     height: 156px;
     flex-shrink: 0;
+  }
+  .intro .intro-video-container .control {
+    top: 62px;
+    left: 281px;
+  }
+  .intro .intro-video-container .control button img {
+    width: 40px;
+    height: 40px;
   }
   .intro .content-container {
     flex-direction: column;
