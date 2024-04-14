@@ -1544,6 +1544,11 @@ header .nav-menu .nav-link {
     width: 107px !important;
     height: 119px !important;
   }
+  .products-card .black-back {
+    width: 205px !important;
+    height: 20px !important;
+    left: -9px;
+  }
 }
 @media screen and (max-width: 729px) {
   .description {
