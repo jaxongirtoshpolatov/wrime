@@ -899,6 +899,19 @@
             padding: 103px 35px 42px 40px;
         }
     }
+    // products
+    .products
+    {
+        &-card 
+        {
+            .light-back
+            {
+                top: 68px !important;
+                width: 107px !important;
+                height: 119px !important;
+            }
+        }
+    }
     
 }
 
@@ -1071,6 +1084,14 @@
         &-cards
         {
             grid-template-columns: auto;
+        }
+        .products-card
+        {
+            width: 100% !important;
+            .product-info
+            {
+                width: 100%;
+            }
         }
     }
     

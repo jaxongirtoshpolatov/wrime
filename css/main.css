@@ -1539,6 +1539,11 @@ header .nav-menu .nav-link {
   .description .content-box {
     padding: 103px 35px 42px 40px;
   }
+  .products-card .light-back {
+    top: 68px !important;
+    width: 107px !important;
+    height: 119px !important;
+  }
 }
 @media screen and (max-width: 729px) {
   .description {
@@ -1637,6 +1642,12 @@ header .nav-menu .nav-link {
   }
   .products-cards {
     grid-template-columns: auto;
+  }
+  .products .products-card {
+    width: 100% !important;
+  }
+  .products .products-card .product-info {
+    width: 100%;
   }
 }
 @media screen and (max-width: 420px) {
